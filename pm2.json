@@ -1,0 +1,19 @@
+{
+  "apps" : [
+    {
+      "name"        : "FE-CMS-DATA-SERVRER-V1",
+      "script"      : "index.js",
+      "args"        : [],
+      "node_args"   : "--harmony",
+      "merge_logs"  : true,
+      "error_file"  : "./log/pm2log/pm2.error.log",
+      "out_file"    : "./log/pm2log/pm2.out.log",
+      "log_date_format" : "YYYY-MM-DD HH:mm Z",
+      "exec_mode"   : "fork",
+      "cwd"         : ".",
+      "max_memory_restart" : "50M",
+      "watch"       : true,
+      "ignore_watch": ["log","node_modules"]
+    }
+  ]
+}
